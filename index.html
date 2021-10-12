@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <script type = "text/javascript"> 
+    var x,y,z;
+    x = prompt("How many hotdogs would you like?");
+    y = prompt("How many orders of fries would you like?");
+    z = prompt("How many sodas would you like?")
+    var subtotal = (Number(x)*(3.75)) + (Number(y)*2.00) + (Number(z)*(1.50));
+    document.write("Hotdogs: " + x);
+    document.write("<br>");
+    document.write("Fries: " + y);
+    document.write("<br>");
+    document.write("Sodas: " + z);
+    document.write("<br>");
+    document.write("Subtotal: ");
+    document.write(subtotal);
+    if (subtotal >= 20){
+        subtotal = subtotal - (subtotal*.1);
+        document.write("<br>");
+        document.write("Subtotal with discount: " + subtotal.toFixed(2));
+    }
+    else {
+        
+    }
+    subtotal = subtotal + (subtotal*.0625);
+    document.write("<br>");
+    document.write("Total with tax: " + subtotal.toFixed(2));
+    document.write("<br>");
+    </script>
+</head>
+
+
+
+
+
+
+
+</html>
